@@ -1,0 +1,6 @@
+framework module BXLoadMoreControl {
+  umbrella header "BXLoadMoreControl-umbrella.h"
+
+  export *
+  module * { export * }
+}

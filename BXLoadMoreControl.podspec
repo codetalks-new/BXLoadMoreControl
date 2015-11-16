@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = "BXLoadMoreControl"
-  s.version          = "0.1.0"
-  s.summary          = "A short description of BXLoadMoreControl."
+  s.version          = "1.0.0"
+  s.summary          = "BXLoadMoreControl behaves like UIRefresh Control but is used to load more"
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,14 +17,15 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!  
   s.description      = <<-DESC
+BXLoadMoreControl behaves like UIRefresh Control but is used to load more,with more state control, and integreted with UITableViewController well.
                        DESC
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/BXLoadMoreControl"
+  s.homepage         = "https://github.com/banxi1988/BXLoadMoreControl"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "banxi1988" => "banxi1988@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/BXLoadMoreControl.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => "https://github.com/banxi1988/BXLoadMoreControl.git", :tag => s.version.to_s }
+  # s.social_media_url = 'https://twitter.com/banxi1988'
 
   s.platform     = :ios, '8.0'
   s.requires_arc = true
@@ -37,4 +38,5 @@ Pod::Spec.new do |s|
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+    s.dependency 'PinAutoLayout'
 end
