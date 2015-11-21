@@ -736,6 +736,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/BXLoadMoreControl/BXLoadMoreControl.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_SWIFT_FLAGS = "$(inherited) -D DEBUG";
 				PRODUCT_NAME = BXLoadMoreControl;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;

@@ -11,6 +11,8 @@ import BXLoadMoreControl
 
 class ViewController: UITableViewController {
 
+    var itemCount = 20
+  
     override func viewDidLoad() {
         super.viewDidLoad()
         let control = BXLoadMoreControl()
@@ -20,7 +22,9 @@ class ViewController: UITableViewController {
             dispatch_async(dispatch_get_global_queue(QOS_CLASS_DEFAULT, 0)){
                 sleep(3)
                 dispatch_async(dispatch_get_main_queue()){
+                   self.itemCount = 30
                     control.endLoading()
+                  self.tableView.reloadData()
                 }
             }
         }
@@ -32,7 +36,7 @@ class ViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 20
+        return itemCount
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
