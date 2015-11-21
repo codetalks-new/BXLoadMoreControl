@@ -64,7 +64,9 @@ class BXLoadMoreControlHelper:NSObject{
                 scrollViewDidScroll(scrollView)
             }else{
                 if scrollView.isPullingUp{
+                  #if DEBUG
                     NSLog("overflowY = \(scrollView.overflowY)")
+                  #endif
                     scrollViewDidEndDragging(scrollView, willDecelerate: scrollView.decelerating)
                 }
             }
@@ -82,14 +84,18 @@ class BXLoadMoreControlHelper:NSObject{
     func scrollViewDidScroll(scrollView: UIScrollView) {
         let contentOffset = scrollView.contentOffset
         let overflowY = scrollView.frame.height + contentOffset.y - scrollView.contentSize.height
+        #if DEBUG
         NSLog("\(__FUNCTION__) contentoffset=\(contentOffset) overflowY=\(overflowY)")
+        #endif
         guard let bx_control = control else{
             return
         }
         
         if bx_control.isLoading{
+        #if DEBUG
             NSLog("isLoading return")
             return
+        #endif
         }
         if scrollView.isPulledUp && !bx_control.isPreparing {
             if !bx_control.isPulled{
@@ -108,7 +114,9 @@ class BXLoadMoreControlHelper:NSObject{
     
     
     func scrollViewDidEndDragging(scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+      #if DEBUG
         NSLog("\(__FUNCTION__) willDecelerate?=\(decelerate)")
+      #endif
         guard let bx_control = control else{
             return
         }

@@ -50,12 +50,12 @@ public class BXLoadMoreControl: UIControl{
     */
     public init() {
         super.init(frame: CGRect(x: 0, y: 0, width: 320, height: 44))
-        backgroundColor = UIColor.lightGrayColor()
+        backgroundColor = UIColor(white: 0.912, alpha: 1.0)
         addSubview(titleLabel)
         addSubview(activityIndicator)
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         titleLabel.textColor = UIColor(white: 0.3, alpha: 1.0)
-        titleLabel.font = UIFont.systemFontOfSize(14)
+        titleLabel.font = UIFont.systemFontOfSize(16)
         titleLabel.textColor = UIColor.darkGrayColor()
         
         activityIndicator.translatesAutoresizingMaskIntoConstraints = false
