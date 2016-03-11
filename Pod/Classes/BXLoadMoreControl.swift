@@ -7,6 +7,17 @@
 import UIKit
 import PinAutoLayout
 
+public struct BXLoadMoreSettings{
+  public static var pageSize = 20
+  public static var pullingString = "上拉显示下\(pageSize)条"
+  public static var pulledString = "释放显示下\(pageSize)条"
+  public static var loadingString = "正在加载..."
+  public static var loadedString = "加载完成"
+  public static var loadFailedString = "加载失败"
+  public static var nomoreString = "没有更多了"
+  public static var triggerPullDistance:CGFloat = 80
+}
+
 public enum BXLoadMoreState:Int{
     case Preparing
     case Pulling
@@ -14,18 +25,21 @@ public enum BXLoadMoreState:Int{
     case Loading
     case Loaded
     case LoadFailed
+    case Nomore
     
     public var tipLabel:String{
         if self == .Pulling || self == .Preparing{
-            return "上拉显示下20条"
+            return BXLoadMoreSettings.pullingString
         }else if self == .Pulled{
-            return "释放显示下20条"
+            return BXLoadMoreSettings.pulledString
         }else if self == .Loading{
-            return "正在加载..."
+            return BXLoadMoreSettings.loadingString
         }else if self == .Loaded{
-            return "加载完成"
+            return  BXLoadMoreSettings.loadedString
         }else if self == .LoadFailed{
-            return "加载失败"
+            return BXLoadMoreSettings.loadFailedString
+        }else if self == .Nomore{
+          return BXLoadMoreSettings.nomoreString
         }
         return ""
     }
@@ -38,7 +52,7 @@ public class BXLoadMoreControl: UIControl{
     
     public let titleLabel  = UILabel(frame: CGRectZero)
     var controlHelper:BXLoadMoreControlHelper? // retain reference to Helper
-    private let activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: .White)
+    public let activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: .White)
    
     public var onLoadingHandler: ( () -> Void)?
     
@@ -49,25 +63,28 @@ public class BXLoadMoreControl: UIControl{
     *
     */
     public init() {
-        super.init(frame: CGRect(x: 0, y: 0, width: 320, height: 44))
-        backgroundColor = UIColor(white: 0.912, alpha: 1.0)
+        super.init(frame: CGRect(x: 0, y: 0, width: 320, height: 50))
+        backgroundColor = UIColor(white: 0.937, alpha: 1.0)
         addSubview(titleLabel)
         addSubview(activityIndicator)
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
-        titleLabel.textColor = UIColor(white: 0.3, alpha: 1.0)
-        titleLabel.font = UIFont.systemFontOfSize(16)
-        titleLabel.textColor = UIColor.darkGrayColor()
+        titleLabel.font = UIFont.systemFontOfSize(17)
+        titleLabel.textColor = UIColor(white: 0.5, alpha: 1.0)
         
         activityIndicator.translatesAutoresizingMaskIntoConstraints = false
         activityIndicator.hidesWhenStopped = true
-        
+        activityIndicator.tintColor = tintColor
         activityIndicator.pinCenterY()
-        activityIndicator.pinLeading(15)
         titleLabel.pinCenterY()
-        titleLabel.pinLeadingToSibling(activityIndicator, margin: 8)
-        
+        titleLabel.pinCenterX()
+        activityIndicator.pinTrailingToSibing(titleLabel, margin: 8)
+      
     }
-    
+  
+  public override func tintColorDidChange() {
+    super.tintColorDidChange()
+    activityIndicator.tintColor = tintColor
+  }
 
 
     private func transitionToState(loadMoreState:BXLoadMoreState){
@@ -84,6 +101,7 @@ public class BXLoadMoreControl: UIControl{
     public var isPulled: Bool{ return loadMoreState == .Pulled }
     public var isPreparing: Bool{ return loadMoreState == .Preparing }
     public var isLoading: Bool{ return loadMoreState == .Loading }
+    public var isNomore: Bool{ return loadMoreState == .Nomore }
    
     public func startPull(){
        transitionToState(.Pulling)
@@ -92,6 +110,19 @@ public class BXLoadMoreControl: UIControl{
     
     public func pulled(){
         transitionToState(.Pulled)
+    }
+  
+  public func nomore(shouldShow:Bool = true){
+      transitionToState(.Nomore)
+      if !shouldShow{
+        UIView.animateWithDuration(0.25){
+          self.hidden = true
+        }
+      }
+    }
+  
+    public func reset(){
+        transitionToState(.Preparing)
     }
     
     
@@ -139,14 +170,7 @@ extension BXLoadMoreControl{
     public var loading: Bool {
         return isLoading
     }
-    
-    public override var tintColor: UIColor!{
-        get{
-            return activityIndicator.tintColor
-        }set{
-            activityIndicator.tintColor = newValue
-        }
-    }
+  
     
     public var attributedTitle: NSAttributedString?{
         get{

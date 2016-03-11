@@ -9,7 +9,7 @@ import UIKit
 extension UIScrollView{
     
     var minPulledDistance: CGFloat{
-        return 44
+        return BXLoadMoreSettings.triggerPullDistance
     }
     
     var overflowY:CGFloat{
@@ -90,7 +90,10 @@ class BXLoadMoreControlHelper:NSObject{
         guard let bx_control = control else{
             return
         }
-        
+        if bx_control.isNomore{
+          return
+        }
+      
         if bx_control.isLoading{
         #if DEBUG
             NSLog("isLoading return")
@@ -120,6 +123,11 @@ class BXLoadMoreControlHelper:NSObject{
         guard let bx_control = control else{
             return
         }
+      
+        if bx_control.isNomore{
+          return
+        }
+      
         if !bx_control.isLoading{
             if scrollView.isPulledUp{
                 NSLog("\(__FUNCTION__) beginLoading")
