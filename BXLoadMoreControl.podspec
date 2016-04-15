@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "BXLoadMoreControl"
-  s.version          = "1.0.2"
+  s.version          = "1.1.0"
   s.summary          = "BXLoadMoreControl behaves like UIRefresh Control but is used to load more"
 
 # This description is used to generate tags and improve search results.
@@ -31,12 +31,8 @@ BXLoadMoreControl behaves like UIRefresh Control but is used to load more,with m
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'
-  s.resource_bundles = {
-    'BXLoadMoreControl' => ['Pod/Assets/*.png']
-  }
-
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
-    s.dependency 'PinAutoLayout'
+    s.dependency 'PinAuto'
 end

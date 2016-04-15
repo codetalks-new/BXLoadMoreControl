@@ -5,7 +5,7 @@
 //
 
 import UIKit
-import PinAutoLayout
+import PinAuto
 
 public struct BXLoadMoreSettings{
   public static var pageSize = 20
@@ -74,10 +74,9 @@ public class BXLoadMoreControl: UIControl{
         activityIndicator.translatesAutoresizingMaskIntoConstraints = false
         activityIndicator.hidesWhenStopped = true
         activityIndicator.tintColor = tintColor
-        activityIndicator.pinCenterY()
-        titleLabel.pinCenterY()
-        titleLabel.pinCenterX()
-        activityIndicator.pinTrailingToSibing(titleLabel, margin: 8)
+        activityIndicator.pa_centerY.install()
+        titleLabel.pac_center()
+        activityIndicator.pa_before(titleLabel, offset: 8).install()
       
     }
   
