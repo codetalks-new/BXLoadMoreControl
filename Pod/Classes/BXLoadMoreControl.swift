@@ -19,42 +19,42 @@ public struct BXLoadMoreSettings{
 }
 
 public enum BXLoadMoreState:Int{
-    case Preparing
-    case Pulling
-    case Pulled
-    case Loading
-    case Loaded
-    case LoadFailed
-    case Nomore
+    case preparing
+    case pulling
+    case pulled
+    case loading
+    case loaded
+    case loadFailed
+    case nomore
     
     public var tipLabel:String{
-        if self == .Pulling || self == .Preparing{
+        if self == .pulling || self == .preparing{
             return BXLoadMoreSettings.pullingString
-        }else if self == .Pulled{
+        }else if self == .pulled{
             return BXLoadMoreSettings.pulledString
-        }else if self == .Loading{
+        }else if self == .loading{
             return BXLoadMoreSettings.loadingString
-        }else if self == .Loaded{
+        }else if self == .loaded{
             return  BXLoadMoreSettings.loadedString
-        }else if self == .LoadFailed{
+        }else if self == .loadFailed{
             return BXLoadMoreSettings.loadFailedString
-        }else if self == .Nomore{
+        }else if self == .nomore{
           return BXLoadMoreSettings.nomoreString
         }
         return ""
     }
 }
 
-public class BXLoadMoreControl: UIControl{
+open class BXLoadMoreControl: UIControl{
 
     
-    private var loadMoreState = BXLoadMoreState.Preparing
+    fileprivate var loadMoreState = BXLoadMoreState.preparing
     
-    public let titleLabel  = UILabel(frame: CGRectZero)
+    open let titleLabel  = UILabel(frame: CGRect.zero)
     var controlHelper:BXLoadMoreControlHelper? // retain reference to Helper
-    public let activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: .White)
+    open let activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: .white)
    
-    public var onLoadingHandler: ( () -> Void)?
+    open var onLoadingHandler: ( () -> Void)?
     
     /* The designated initializer
     * This initializes a UIRefreshControl with a default height and width.
@@ -68,7 +68,7 @@ public class BXLoadMoreControl: UIControl{
         addSubview(titleLabel)
         addSubview(activityIndicator)
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
-        titleLabel.font = UIFont.systemFontOfSize(17)
+        titleLabel.font = UIFont.systemFont(ofSize: 17)
         titleLabel.textColor = UIColor(white: 0.5, alpha: 1.0)
         
         activityIndicator.translatesAutoresizingMaskIntoConstraints = false
@@ -80,15 +80,15 @@ public class BXLoadMoreControl: UIControl{
       
     }
   
-  public override func tintColorDidChange() {
+  open override func tintColorDidChange() {
     super.tintColorDidChange()
     activityIndicator.tintColor = tintColor
   }
 
 
-    private func transitionToState(loadMoreState:BXLoadMoreState){
+    fileprivate func transitionToState(_ loadMoreState:BXLoadMoreState){
         self.loadMoreState = loadMoreState
-        if loadMoreState == .Loading{
+        if loadMoreState == .loading{
             activityIndicator.startAnimating()
         }else{
            activityIndicator.stopAnimating()
@@ -96,58 +96,58 @@ public class BXLoadMoreControl: UIControl{
         titleLabel.text = loadMoreState.tipLabel
     }
     
-    public var isPulling: Bool{ return loadMoreState == .Pulling }
-    public var isPulled: Bool{ return loadMoreState == .Pulled }
-    public var isPreparing: Bool{ return loadMoreState == .Preparing }
-    public var isLoading: Bool{ return loadMoreState == .Loading }
-    public var isNomore: Bool{ return loadMoreState == .Nomore }
+    open var isPulling: Bool{ return loadMoreState == .pulling }
+    open var isPulled: Bool{ return loadMoreState == .pulled }
+    open var isPreparing: Bool{ return loadMoreState == .preparing }
+    open var isLoading: Bool{ return loadMoreState == .loading }
+    open var isNomore: Bool{ return loadMoreState == .nomore }
    
-    public func startPull(){
-       transitionToState(.Pulling)
+    open func startPull(){
+       transitionToState(.pulling)
     }
     
     
-    public func pulled(){
-        transitionToState(.Pulled)
+    open func pulled(){
+        transitionToState(.pulled)
     }
   
-  public func nomore(shouldShow:Bool = true){
-      transitionToState(.Nomore)
+  open func nomore(_ shouldShow:Bool = true){
+      transitionToState(.nomore)
       if !shouldShow{
-        UIView.animateWithDuration(0.25){
-          self.hidden = true
-        }
+        UIView.animate(withDuration: 0.25, animations: {
+          self.isHidden = true
+        })
       }
     }
   
-    public func reset(){
-        transitionToState(.Preparing)
+    open func reset(){
+        transitionToState(.preparing)
     }
     
     
-    public func canceled(){
-        transitionToState(.Preparing)
+    open func canceled(){
+        transitionToState(.preparing)
     }
     
-    public func startLoad(){
-        transitionToState(.Loading)
-        sendActionsForControlEvents(UIControlEvents.ValueChanged)
+    open func startLoad(){
+        transitionToState(.loading)
+        sendActions(for: UIControlEvents.valueChanged)
         self.onLoadingHandler?()
     }
     
-    public func loaded(){
-        transitionToState(.Loaded)
+    open func loaded(){
+        transitionToState(.loaded)
         self.prepareForNextPull()
     }
    
-    private func prepareForNextPull(){
+    fileprivate func prepareForNextPull(){
         delay(2){[weak self] in
-            self?.transitionToState(.Preparing)
+            self?.transitionToState(.preparing)
         }
     }
     
-    public func loadFailed(){
-        transitionToState(.LoadFailed)
+    open func loadFailed(){
+        transitionToState(.loadFailed)
         self.prepareForNextPull()
     }
     
@@ -156,9 +156,9 @@ public class BXLoadMoreControl: UIControl{
         fatalError("init(coder:) has not been implemented")
     }
     
-    func delay(delay:NSTimeInterval, block:dispatch_block_t){
-        let when = dispatch_time(DISPATCH_TIME_NOW, Int64(delay * NSTimeInterval(NSEC_PER_SEC)))
-        dispatch_after(when,dispatch_get_main_queue(),block)
+    func delay(_ delay:TimeInterval, block:@escaping ()->()){
+        let when = DispatchTime.now() + Double(Int64(delay * TimeInterval(NSEC_PER_SEC))) / Double(NSEC_PER_SEC)
+        DispatchQueue.main.asyncAfter(deadline: when,execute: block)
     }
 }
 
