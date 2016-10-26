@@ -41,7 +41,7 @@
 		607FACE51AFB9204008FA782 /* BXLoadMoreControl_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BXLoadMoreControl_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		6F4F16BA198F6A39C9FE7AC6 /* BXLoadMoreControl.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = BXLoadMoreControl.podspec; path = ../BXLoadMoreControl.podspec; sourceTree = "<group>"; };
+		6F4F16BA198F6A39C9FE7AC6 /* BXLoadMoreControl.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = BXLoadMoreControl.podspec; path = ../BXLoadMoreControl.podspec; sourceTree = "<group>"; };
 		776155ECE32339E56A0A0F97 /* Pods_BXLoadMoreControl_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BXLoadMoreControl_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B3B8326124B26924B8CA91B /* Pods-BXLoadMoreControl_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BXLoadMoreControl_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-BXLoadMoreControl_Example/Pods-BXLoadMoreControl_Example.release.xcconfig"; sourceTree = "<group>"; };
 		865185998C6AC015D7F2B5CF /* Pods-BXLoadMoreControl_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BXLoadMoreControl_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BXLoadMoreControl_Example/Pods-BXLoadMoreControl_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -166,12 +166,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "BXLoadMoreControl_Example" */;
 			buildPhases = (
-				43AF39CA6C41C548890061B1 /* 📦 Check Pods Manifest.lock */,
+				43AF39CA6C41C548890061B1 /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				16A5A67E259AC53D8FC2882D /* 📦 Embed Pods Frameworks */,
-				4EDDC4E5A99E6C32789B2288 /* 📦 Copy Pods Resources */,
+				16A5A67E259AC53D8FC2882D /* [CP] Embed Pods Frameworks */,
+				4EDDC4E5A99E6C32789B2288 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -186,12 +186,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "BXLoadMoreControl_Tests" */;
 			buildPhases = (
-				C55702B2B8F5C51AF2591ED9 /* 📦 Check Pods Manifest.lock */,
+				C55702B2B8F5C51AF2591ED9 /* [CP] Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
-				AA637740296557CE18AE46BE /* 📦 Embed Pods Frameworks */,
-				BA0376CF4D19BC5104FFBE69 /* 📦 Copy Pods Resources */,
+				AA637740296557CE18AE46BE /* [CP] Embed Pods Frameworks */,
+				BA0376CF4D19BC5104FFBE69 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -215,9 +215,11 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = QQFZ2M2M7Y;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = QQFZ2M2M7Y;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
 				};
@@ -262,14 +264,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		16A5A67E259AC53D8FC2882D /* 📦 Embed Pods Frameworks */ = {
+		16A5A67E259AC53D8FC2882D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,29 +279,29 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BXLoadMoreControl_Example/Pods-BXLoadMoreControl_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		43AF39CA6C41C548890061B1 /* 📦 Check Pods Manifest.lock */ = {
+		43AF39CA6C41C548890061B1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		4EDDC4E5A99E6C32789B2288 /* 📦 Copy Pods Resources */ = {
+		4EDDC4E5A99E6C32789B2288 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -307,14 +309,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BXLoadMoreControl_Example/Pods-BXLoadMoreControl_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		AA637740296557CE18AE46BE /* 📦 Embed Pods Frameworks */ = {
+		AA637740296557CE18AE46BE /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -322,14 +324,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BXLoadMoreControl_Tests/Pods-BXLoadMoreControl_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BA0376CF4D19BC5104FFBE69 /* 📦 Copy Pods Resources */ = {
+		BA0376CF4D19BC5104FFBE69 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,19 +339,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BXLoadMoreControl_Tests/Pods-BXLoadMoreControl_Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C55702B2B8F5C51AF2591ED9 /* 📦 Check Pods Manifest.lock */ = {
+		C55702B2B8F5C51AF2591ED9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -489,11 +491,13 @@
 			baseConfigurationReference = 865185998C6AC015D7F2B5CF /* Pods-BXLoadMoreControl_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = QQFZ2M2M7Y;
 				INFOPLIST_FILE = BXLoadMoreControl/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -502,11 +506,13 @@
 			baseConfigurationReference = 7B3B8326124B26924B8CA91B /* Pods-BXLoadMoreControl_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = QQFZ2M2M7Y;
 				INFOPLIST_FILE = BXLoadMoreControl/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -515,6 +521,7 @@
 			baseConfigurationReference = 5E61B6DDCE3A31152DAEEE58 /* Pods-BXLoadMoreControl_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = QQFZ2M2M7Y;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -527,6 +534,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BXLoadMoreControl_Example.app/BXLoadMoreControl_Example";
 			};
 			name = Debug;
@@ -536,6 +544,7 @@
 			baseConfigurationReference = 3A2B101B75694FE146FD53CA /* Pods-BXLoadMoreControl_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = QQFZ2M2M7Y;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -544,6 +553,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BXLoadMoreControl_Example.app/BXLoadMoreControl_Example";
 			};
 			name = Release;

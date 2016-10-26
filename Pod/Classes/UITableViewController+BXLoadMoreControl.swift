@@ -48,30 +48,30 @@ class BXLoadMoreControlHelper:NSObject{
         self.scrollView = scrollView
         super.init()
         control.controlHelper = self
-        scrollView.addObserver(self, forKeyPath: contentOffsetKeyPath, options: .Initial, context: &KVOContext)
+        scrollView.addObserver(self, forKeyPath: contentOffsetKeyPath, options: .initial, context: &KVOContext)
     }
    
     // MARK: KVO
-    private var KVOContext = "bx_kvo_context"
-    private let contentOffsetKeyPath = "contentOffset"
+    fileprivate var KVOContext = "bx_kvo_context"
+    fileprivate let contentOffsetKeyPath = "contentOffset"
     
-    override func observeValueForKeyPath(keyPath: String?, ofObject object: AnyObject?, change: [String : AnyObject]?, context: UnsafeMutablePointer<Void>) {
+    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
         if (keyPath == contentOffsetKeyPath && (object as? UIScrollView == scrollView)){
             guard let scrollView = scrollView else{
                 return
             }
-            if scrollView.dragging{
+            if scrollView.isDragging{
                 scrollViewDidScroll(scrollView)
             }else{
                 if scrollView.isPullingUp{
                   #if DEBUG
                     NSLog("overflowY = \(scrollView.overflowY)")
                   #endif
-                    scrollViewDidEndDragging(scrollView, willDecelerate: scrollView.decelerating)
+                    scrollViewDidEndDragging(scrollView, willDecelerate: scrollView.isDecelerating)
                 }
             }
         }else{
-            super.observeValueForKeyPath(keyPath, ofObject: object, change: change, context: context)
+            super.observeValue(forKeyPath: keyPath, of: object, change: change, context: context)
         }
         
     }
@@ -81,7 +81,7 @@ class BXLoadMoreControlHelper:NSObject{
     }
     
     //MARK: Hook UIScrollViewDelegate
-    func scrollViewDidScroll(scrollView: UIScrollView) {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let contentOffset = scrollView.contentOffset
         let overflowY = scrollView.frame.height + contentOffset.y - scrollView.contentSize.height
         #if DEBUG
@@ -116,7 +116,7 @@ class BXLoadMoreControlHelper:NSObject{
     
     
     
-    func scrollViewDidEndDragging(scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
       #if DEBUG
         NSLog("\(#function) willDecelerate?=\(decelerate)")
       #endif
@@ -140,7 +140,7 @@ class BXLoadMoreControlHelper:NSObject{
 }
 
 public extension UITableViewController{
-    private struct AssociatedKeys{
+    fileprivate struct AssociatedKeys{
         static let LoadMoreControlKey = "bx_LoadMoreControlKey"
     }
     

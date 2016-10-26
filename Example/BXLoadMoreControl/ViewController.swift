@@ -19,9 +19,9 @@ class ViewController: UITableViewController {
         self.bx_loadMoreControl = control
         control.onLoadingHandler = {
             NSLog("onLoadingHandler called")
-            dispatch_async(dispatch_get_global_queue(QOS_CLASS_DEFAULT, 0)){
+          DispatchQueue.global(qos:DispatchQoS.QoSClass.userInitiated).async(){
                 sleep(3)
-                dispatch_async(dispatch_get_main_queue()){
+            DispatchQueue.main.async(){
                    self.itemCount = 30
                     control.endLoading()
                   self.tableView.reloadData()
@@ -35,12 +35,12 @@ class ViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return itemCount
     }
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.textLabel?.text = "Titlte \(indexPath.row + 1)"
         return cell
     }

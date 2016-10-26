@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		03EA3BA94622263059EE77E1EAE1C9D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D83EF353A5967F930EE8A90B436CD22 /* Foundation.framework */; };
-		113667D1B661A57840532B6AF5424515 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D83EF353A5967F930EE8A90B436CD22 /* Foundation.framework */; };
 		15ECEFD15CE6D5EC3868E21D2D9A1C70 /* UIView+PinAuto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC7DD155CF199CF9453496113E92B36 /* UIView+PinAuto.swift */; };
 		1E8B6295A6A46EE076462A4FD7248CDA /* Pods-BXLoadMoreControl_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A7712DB238FE2E9B8D684AD8EF05DCE /* Pods-BXLoadMoreControl_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23D53CAD76EF4982B885592854CF0A6F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA9FF95E4F6FE9358AF4CA5B9B8AED5D /* Foundation.framework */; };
+		29DB25299263F56845B649F368C5E776 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA9FF95E4F6FE9358AF4CA5B9B8AED5D /* Foundation.framework */; };
 		46BD0841D922A159B1D0D4457CB4562D /* BXLoadMoreControl-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5453B91F6E250DE2954D81C0820825 /* BXLoadMoreControl-dummy.m */; };
 		511211B421F7C1B9FCEC733C8530D547 /* PinAuto-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F1D49864D45CAA9012DCEEF6A552487 /* PinAuto-dummy.m */; };
-		78B4D43C824C2E1BBB9F216321075B36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D83EF353A5967F930EE8A90B436CD22 /* Foundation.framework */; };
+		6CA82E45410BD2FD00D9EFA3520ECDAB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA9FF95E4F6FE9358AF4CA5B9B8AED5D /* Foundation.framework */; };
+		6D29D260773BEEA384B9511F4B1195D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA9FF95E4F6FE9358AF4CA5B9B8AED5D /* Foundation.framework */; };
 		832AD694317A6D13F43EC959906F4244 /* Pods-BXLoadMoreControl_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DE320A695C1932BB1E451D2ED58D6984 /* Pods-BXLoadMoreControl_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		84F388B56127F31189E2CBA5C0DC9F20 /* BXLoadMoreControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CF69C08AD8EF2A2C1048721F8F1851 /* BXLoadMoreControl.swift */; };
 		99F623AA7AE470939CE4A257100469AF /* UIView+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16620553D95E26A6EF5659CA6099152 /* UIView+Convenience.swift */; };
@@ -22,7 +23,6 @@
 		B72A8B46B29BDFCB0F76CEF4703483A2 /* UITableViewController+BXLoadMoreControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4355864B152341F8B2B23C293348AC0 /* UITableViewController+BXLoadMoreControl.swift */; };
 		C011AB72B2F9365C0D63991DC0FF3C4C /* BXLoadMoreControl-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AF9907BE23FA96C6738A4133ED462720 /* BXLoadMoreControl-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C2256CB27198496B7091DB47C06DAF6F /* Pods-BXLoadMoreControl_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 58957878E01E0B11A092B8DE13AD745A /* Pods-BXLoadMoreControl_Tests-dummy.m */; };
-		C45C3C9CDD180A5A8541FA4647F3A2D9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D83EF353A5967F930EE8A90B436CD22 /* Foundation.framework */; };
 		CC04811570B39F6A4BBDA5F0653263E2 /* PinAuto-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B5161CF92246AFE70452949F60C4390 /* PinAuto-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F70B1583A36D78F175A560660F483655 /* PinAuto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94C845B3E142BFB4E0622AF20CB25482 /* PinAuto.framework */; };
 /* End PBXBuildFile section */
@@ -69,7 +69,6 @@
 		0B72617336455CDA731281A7A2021CC3 /* Pods-BXLoadMoreControl_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BXLoadMoreControl_Example-dummy.m"; sourceTree = "<group>"; };
 		0BC7DD155CF199CF9453496113E92B36 /* UIView+PinAuto.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+PinAuto.swift"; path = "Pod/Classes/UIView+PinAuto.swift"; sourceTree = "<group>"; };
 		181596C4CEB7DCF3AFCBA9DB000442B1 /* PinAuto.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = PinAuto.modulemap; sourceTree = "<group>"; };
-		1D83EF353A5967F930EE8A90B436CD22 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		26F5065D73E7A11D7B91F78429BB3441 /* Pods-BXLoadMoreControl_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BXLoadMoreControl_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		2E58649D07EF31AFF4F286A5C6ED5CBC /* Pods-BXLoadMoreControl_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-BXLoadMoreControl_Example.modulemap"; sourceTree = "<group>"; };
 		2EC3447465D88CAF3B059F1056B06ACB /* Pods-BXLoadMoreControl_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BXLoadMoreControl_Tests-frameworks.sh"; sourceTree = "<group>"; };
@@ -94,6 +93,7 @@
 		A0942697CED31D1A55E59D3EA7DEF83D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4355864B152341F8B2B23C293348AC0 /* UITableViewController+BXLoadMoreControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UITableViewController+BXLoadMoreControl.swift"; sourceTree = "<group>"; };
 		AF9907BE23FA96C6738A4133ED462720 /* BXLoadMoreControl-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BXLoadMoreControl-umbrella.h"; sourceTree = "<group>"; };
+		BA9FF95E4F6FE9358AF4CA5B9B8AED5D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		C906EAA4B16CC63ECDEC3A2AC4EDFA3A /* Pods-BXLoadMoreControl_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-BXLoadMoreControl_Tests.modulemap"; sourceTree = "<group>"; };
 		D6EF32410651D440B793D623C69A5F2D /* Pods-BXLoadMoreControl_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BXLoadMoreControl_Tests-resources.sh"; sourceTree = "<group>"; };
 		DE320A695C1932BB1E451D2ED58D6984 /* Pods-BXLoadMoreControl_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BXLoadMoreControl_Example-umbrella.h"; sourceTree = "<group>"; };
@@ -117,7 +117,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78B4D43C824C2E1BBB9F216321075B36 /* Foundation.framework in Frameworks */,
+				23D53CAD76EF4982B885592854CF0A6F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,7 +125,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03EA3BA94622263059EE77E1EAE1C9D2 /* Foundation.framework in Frameworks */,
+				29DB25299263F56845B649F368C5E776 /* Foundation.framework in Frameworks */,
 				F70B1583A36D78F175A560660F483655 /* PinAuto.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -134,7 +134,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				113667D1B661A57840532B6AF5424515 /* Foundation.framework in Frameworks */,
+				6CA82E45410BD2FD00D9EFA3520ECDAB /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,7 +142,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C45C3C9CDD180A5A8541FA4647F3A2D9 /* Foundation.framework in Frameworks */,
+				6D29D260773BEEA384B9511F4B1195D2 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,14 +184,6 @@
 			);
 			name = BXLoadMoreControl;
 			path = ../..;
-			sourceTree = "<group>";
-		};
-		2D059A447368CBB118A0F2080EC3800C /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				1D83EF353A5967F930EE8A90B436CD22 /* Foundation.framework */,
-			);
-			name = iOS;
 			sourceTree = "<group>";
 		};
 		35159A79572748BC5910986A744B5879 /* Pods-BXLoadMoreControl_Example */ = {
@@ -253,7 +245,7 @@
 			isa = PBXGroup;
 			children = (
 				94C845B3E142BFB4E0622AF20CB25482 /* PinAuto.framework */,
-				2D059A447368CBB118A0F2080EC3800C /* iOS */,
+				A4E85BB67617E11173BBCF8B964C26C0 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -276,6 +268,14 @@
 				1BD1F512109EC7C078F43C1C61CE1CBA /* BXLoadMoreControl */,
 			);
 			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		A4E85BB67617E11173BBCF8B964C26C0 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				BA9FF95E4F6FE9358AF4CA5B9B8AED5D /* Foundation.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		C3B332FB8CE4CBC51AF8CD32C2A798BB /* Products */ = {
@@ -433,8 +433,13 @@
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0720;
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					2B6A7DB6E4DAE0FF3D6D83A320E00099 = {
+						LastSwiftMigration = 0800;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -530,48 +535,143 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		01B0525C3AAA04F1D10E2C934631B736 /* Release */ = {
+		3CC65B0F6265964F2EAD08041A6E9492 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEC5986B7ED715BC8BC6025586AADCE8 /* BXLoadMoreControl.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BXLoadMoreControl/BXLoadMoreControl-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BXLoadMoreControl/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BXLoadMoreControl/BXLoadMoreControl.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = BXLoadMoreControl;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		412BF3A027149F6B3334C2769DF3F0E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEF2144F83FDE6D240E9B67EDB924D73 /* PinAuto.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PinAuto/PinAuto-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PinAuto/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PinAuto/PinAuto.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = PinAuto;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		4E858886695E693542296FBD8567D3BF /* Debug */ = {
+		6ABB9EE3F0AE55C43D2CC497C15981C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEF2144F83FDE6D240E9B67EDB924D73 /* PinAuto.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PinAuto/PinAuto-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PinAuto/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PinAuto/PinAuto.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = PinAuto;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7A15BC5BE2E6C76A03CDD25C00E6D765 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEC5986B7ED715BC8BC6025586AADCE8 /* BXLoadMoreControl.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BXLoadMoreControl/BXLoadMoreControl-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BXLoadMoreControl/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BXLoadMoreControl/BXLoadMoreControl.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = BXLoadMoreControl;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9535E3E8F8B7AFCADB9D5A2EC12AF7EA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 94FD337B6C6AD72A7CBECF851ADB9350 /* Pods-BXLoadMoreControl_Tests.debug.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
@@ -601,73 +701,11 @@
 			};
 			name = Debug;
 		};
-		7FE2DF39158F6104A5E5127661750E03 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9150D8C9A03944AE6672BA3638FE8C8E /* Pods-BXLoadMoreControl_Example.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-BXLoadMoreControl_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-BXLoadMoreControl_Example/Pods-BXLoadMoreControl_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_BXLoadMoreControl_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		87DB338C3259791672A766BEA9A2EAA9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EEF2144F83FDE6D240E9B67EDB924D73 /* PinAuto.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/PinAuto/PinAuto-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PinAuto/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/PinAuto/PinAuto.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = PinAuto;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		A37822B79A6217169456B6E4E5834FD9 /* Debug */ = {
+		A435E3C35B2666C25C53422D898980A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -681,6 +719,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -700,108 +739,19 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		C1B26ED93246FD2D9453AD6064FA6E81 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EEF2144F83FDE6D240E9B67EDB924D73 /* PinAuto.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/PinAuto/PinAuto-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PinAuto/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/PinAuto/PinAuto.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = PinAuto;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		C845F8B9A56DE97294F14BA0D9DFBE94 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EEC5986B7ED715BC8BC6025586AADCE8 /* BXLoadMoreControl.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/BXLoadMoreControl/BXLoadMoreControl-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/BXLoadMoreControl/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/BXLoadMoreControl/BXLoadMoreControl.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = BXLoadMoreControl;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		DB11B861C9081C411CA38247E5AD87C2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 26F5065D73E7A11D7B91F78429BB3441 /* Pods-BXLoadMoreControl_Tests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-BXLoadMoreControl_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-BXLoadMoreControl_Tests/Pods-BXLoadMoreControl_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_BXLoadMoreControl_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		E73EA9A8711830342301F5B7476F36A3 /* Debug */ = {
+		AB9FB661021B571DA7B3338A3E1E545F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E563DEA9019555F93794A032E190682C /* Pods-BXLoadMoreControl_Example.debug.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
@@ -831,11 +781,13 @@
 			};
 			name = Debug;
 		};
-		E82E10884D12DBFAF277A6E4D9D5BD45 /* Release */ = {
+		D3BF075EF2D3311D336E0CB1B9A9283C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EEC5986B7ED715BC8BC6025586AADCE8 /* BXLoadMoreControl.xcconfig */;
+			baseConfigurationReference = 26F5065D73E7A11D7B91F78429BB3441 /* Pods-BXLoadMoreControl_Tests.release.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
@@ -844,19 +796,98 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/BXLoadMoreControl/BXLoadMoreControl-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/BXLoadMoreControl/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-BXLoadMoreControl_Tests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/BXLoadMoreControl/BXLoadMoreControl.modulemap";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BXLoadMoreControl_Tests/Pods-BXLoadMoreControl_Tests.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = BXLoadMoreControl;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_BXLoadMoreControl_Tests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E179C83DD1CA6978BF50C5CE219F713E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9150D8C9A03944AE6672BA3638FE8C8E /* Pods-BXLoadMoreControl_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-BXLoadMoreControl_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BXLoadMoreControl_Example/Pods-BXLoadMoreControl_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_BXLoadMoreControl_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F2C4F47FC8AD76198661C5EFDE751899 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -866,8 +897,8 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A37822B79A6217169456B6E4E5834FD9 /* Debug */,
-				01B0525C3AAA04F1D10E2C934631B736 /* Release */,
+				A435E3C35B2666C25C53422D898980A7 /* Debug */,
+				F2C4F47FC8AD76198661C5EFDE751899 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -875,8 +906,8 @@
 		55071887CAE6EB5E6B3A60B01D26EEDD /* Build configuration list for PBXNativeTarget "BXLoadMoreControl" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C845F8B9A56DE97294F14BA0D9DFBE94 /* Debug */,
-				E82E10884D12DBFAF277A6E4D9D5BD45 /* Release */,
+				3CC65B0F6265964F2EAD08041A6E9492 /* Debug */,
+				7A15BC5BE2E6C76A03CDD25C00E6D765 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -884,8 +915,8 @@
 		734332F3759DBCD64DCA6970ED9B94D2 /* Build configuration list for PBXNativeTarget "Pods-BXLoadMoreControl_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E73EA9A8711830342301F5B7476F36A3 /* Debug */,
-				7FE2DF39158F6104A5E5127661750E03 /* Release */,
+				AB9FB661021B571DA7B3338A3E1E545F /* Debug */,
+				E179C83DD1CA6978BF50C5CE219F713E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -893,8 +924,8 @@
 		9C0B2542D880E8D396463F9716EE85A1 /* Build configuration list for PBXNativeTarget "Pods-BXLoadMoreControl_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4E858886695E693542296FBD8567D3BF /* Debug */,
-				DB11B861C9081C411CA38247E5AD87C2 /* Release */,
+				9535E3E8F8B7AFCADB9D5A2EC12AF7EA /* Debug */,
+				D3BF075EF2D3311D336E0CB1B9A9283C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -902,8 +933,8 @@
 		C08E91C4B243048A3AD69CE6A5F09FE1 /* Build configuration list for PBXNativeTarget "PinAuto" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				87DB338C3259791672A766BEA9A2EAA9 /* Debug */,
-				C1B26ED93246FD2D9453AD6064FA6E81 /* Release */,
+				6ABB9EE3F0AE55C43D2CC497C15981C7 /* Debug */,
+				412BF3A027149F6B3334C2769DF3F0E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

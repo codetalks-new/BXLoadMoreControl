@@ -1,7 +1,7 @@
 PODS:
-  - BXLoadMoreControl (1.0.2):
-    - PinAuto
-  - PinAuto (1.6)
+  - BXLoadMoreControl (2.0.0):
+    - PinAuto (~> 2.0)
+  - PinAuto (2.0)
 
 DEPENDENCIES:
   - BXLoadMoreControl (from `../`)
@@ -11,9 +11,9 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  BXLoadMoreControl: 302fbd4cb2ef1fe43e03166502ddd6971306166d
-  PinAuto: 3fea106a06036fedf49928e65a1bced151c02f8a
+  BXLoadMoreControl: 051e46e88cda674bb9a5eb5fab99cd39bed8df8b
+  PinAuto: c17b09abc2710d60f523f397890bca0572d489e3
 
 PODFILE CHECKSUM: d123c3c0b50a70f90aa8512a5d4f718cebae0f5a
 
-COCOAPODS: 1.0.0.beta.7
+COCOAPODS: 1.1.0.rc.2
